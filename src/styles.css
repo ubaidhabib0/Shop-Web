@@ -1,0 +1,17 @@
+:root{--gold:#b08d57;--ink:#111;--bg:#faf8f4}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:Georgia,'Times New Roman',serif;letter-spacing:.01em}
+.brand{font-size:1.5rem;font-weight:700;color:var(--ink);text-decoration:none}.brand span{color:var(--gold)}
+.navbar{background:#fff;border-bottom:1px solid #e8e3d9}.nav-link{color:#333;font-size:.92rem}
+.btn-dark{background:var(--ink);border-color:var(--ink)}.btn-gold{background:var(--gold);color:#fff;border:0}.btn-gold:hover{background:#96763f;color:#fff}
+.hero{background:#111;color:#fff;padding:5rem 0}.hero h1{font-size:clamp(2.2rem,6vw,4rem)}.hero .lead{color:#cfc8b8;max-width:34rem}
+.pcard{background:#fff;border:1px solid #e8e3d9;border-radius:14px;overflow:hidden;height:100%;display:flex;flex-direction:column;transition:box-shadow .2s}
+.pcard:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}.pcard img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#f1ede6}
+.pcard .body{padding:.9rem;display:flex;flex-direction:column;gap:.25rem;flex:1}.brandtag{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold)}
+.old{text-decoration:line-through;color:#999;font-size:.85rem}.badge-off{background:var(--gold)}
+.heart{position:absolute;top:10px;right:10px;background:#fff;border:0;border-radius:50%;width:36px;height:36px}
+.panel{background:#fff;border:1px solid #e8e3d9;border-radius:14px;padding:1.25rem}
+.admin-side{background:#111;min-height:100vh}.admin-side a{color:#cfc8b8;display:block;padding:.6rem 1rem;text-decoration:none}.admin-side a.active,.admin-side a:hover{color:#fff;background:#222}
+.toast-box{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#111;color:#fff;padding:.7rem 1.2rem;border-radius:10px;z-index:2000}
+.table-responsive{overflow-x:auto}
+@media(max-width:768px){.admin-side{min-height:auto}.hero{padding:3rem 0}}

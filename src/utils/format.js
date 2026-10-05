@@ -1,0 +1,3 @@
+import {CONFIG} from '../config';
+export const money=n=>`${CONFIG.currency} ${Math.round(n).toLocaleString('en-PK')}`;
+export const placeholder=t=>'data:image/svg+xml;utf8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="#f1ede6"/><circle cx="200" cy="200" r="90" fill="#fff" stroke="#b08d57" stroke-width="8"/><path d="M200 200V145M200 200l35 20" stroke="#111" stroke-width="6" stroke-linecap="round"/><text x="200" y="360" font-size="18" text-anchor="middle" fill="#8a7a5c" font-family="serif">${t||'Chronova'}</text></svg>`);
